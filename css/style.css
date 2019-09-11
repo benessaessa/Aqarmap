@@ -35,11 +35,88 @@
 	background-color: rgba(237, 205, 31, 1);
 	color: #fff;
 }
+.dropdown-menu{
+    background-color: #0277bd;
+}
+.dropdown-menu .dropdown-item{
+    color: white;
+}
+.dropdown-menu .dropdown-item:hover{
+    background-color: #0267A4;
+    color: white;
+}
 /* --------------------------------------------------- Search -------------------- */
 .search{
     background: url(../images/download.jpg);
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.btnSerch{
+    height: 60px;width: 100px;border-radius: 60px;
+}
+#sel1{
+    height: 60px;border-radius: 0px 20px 20px 0px;
+}
+#sel2{
+    height: 60px;margin-left: -2px;
+}
+#sel3{
+    height: 60px;border-radius: 20px 0px 0px 20px;
+}
+@media screen and (max-width: 770px) {
+    .serchDiv {
+      margin-top: 10px;
+      text-align: center;
+      
+    }
+    .btnSerch{
+        width: 100%;
+        height: 40px;
+    }
+    #sel1{
+        margin: 4px;
+        border-radius: 20px;
+        width: 48%;
+        height: 40px;
+    }
+    #sel2{
+        margin: 4px;
+        border-radius: 20px;
+        width: 48%;
+        height: 40px;
+    }
+    #sel3{
+        margin-top: 4px;
+        border-radius: 20px;
+        width: 100%;
+        height: 40px;
+    }
+
+}
+@media screen and (max-width:1000px){
+    .akarMop button{
+        min-width: 100% !important;
+        color: red;
+        display: flex;
+        justify-content: center;
+    }
+}
+.search .spn1{
+    background-color: rgba(0,0,0,.65);
+    color: #fff;
+    border-radius: 30px;
+    padding: 7px 20px;
+    font-weight: bold;
+}
+.search .spn2 a{
+    font-size: 18px;
+    text-decoration: underline;
+    color: #FFFFFF !important;
+    font-weight: bold;
+}
+.search .spn2 a:hover{
+    text-decoration: none;
 }
 /* -----------------------Aqar places------------------*/
 .aqar a{
@@ -55,7 +132,11 @@
     color: #494949;
     font-weight: bold;
 }
- .cards .card a{
+.imageCard{
+    width: 100%;
+    height: 200px;
+}
+.cards .card a{
     font-size: 24px;
     color: #337ab7;
     font-weight: bold;
@@ -89,15 +170,26 @@
 .moreCards .card .btn:hover{
     background-color: #eb992e;
 }
+.cardHead{
+    background: url(../images/img1.jpg);
+    height:200px;
+}
 .bgImage{
     background:url(../images/mobiles-in-footer-banner.png);
-    height: 200px;
+    height: 210px;
     background-repeat: no-repeat;
     background-size: 332px;
     background-position: center 15px;
     overflow: hidden;
     text-align: center;
     padding: 15px 0"
+}
+/* -------------------------------------- akarMop --------------- */
+.akarMop{
+    background-color: #0277bd;
+}
+.akarMop .btn{
+    width: 70%;
 }
 /* -------------------------- Footer --------------- */
 .foots a{
@@ -118,18 +210,237 @@
     border-radius: 20px;
 }
 .fontaswems a .fab:hover{
-    background-color: red;
-    
+    color: rgb(22, 82, 97);
+    padding: 15px;
+    transition: all0.5s ease-in-out;
 }
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
 /* -------------------------------------------- Page Announcement --------------- */
 /* Head */
 .hedAnnouncement .fas{color: #f38b00}
+.hedAnnouncement .hed{
+    font-size: 14px;color: #777;
+}
 .hedAnnouncement a{
     color: #0277bd;
     font-size: 14px;
     padding: 4px;
 }
+#demo img{
+    width: 100%;
+    height: 400px;
+}
+#imageHide{
+    display: none;
+}
+#imageHide img{
+    border: 1px solid black;width: 100%;height:400px;
+}
+.Email .jumbotron{
+    color: black;border: 1px solid rgb(224, 210, 210);
+}
+.Email .butnOrange{
+    font-size: 22px;background-color:rgb(245, 140, 42);
+}
+.Email .jumbotron .btn{
+    font-size: 16px;
+    height: 40px;
+    font-weight: bold;
+}
+.modal .showBtn{
+    border-radius: 20px;
+    font-weight: bold;
+}
+.cardImageModal{
+    width: 100%;
+    height: 200px;
+}
+.cardModal{
+    box-shadow:1px 1px 1px rgb(185, 195, 201);
+}
+.cardModal a{
+    font-size: 14px;
+    color: rgb(63, 48, 48);
+    font-weight: bold;
+}
+.cardModal a:hover{
+    color: #f38b00;
+}
+.cardModal .card-text{
+    font-size: 12px;
+    color: #777;
+}
+.cardModal h6{
+    color: #f38b00;
+    font-size: 17px;
+}
+.hedShahed{
+    font-size: 22px !important;
+}
+.shahed a{
+    color: #555555;
+    font-weight: bold;
+}
+.shahed .tdang{
+    font-size: 13px;
+    color: #f9a825;
+}
+.shahed small{
+    color: #AFAFAF;
+    font-size: 11px;
+    font-weight: bold;
+}
+.shahed .btn-primary{
+    border-radius: 15px;
+    height: 35px;
+    font-size: 14px;
+}
+.shahed .btn-outline-info{
+    height: 35px;
+    color: #f9a825;
+    font-size: 14px;
+}
+/* ////////////////////////////////////////////////////////////////////////////////// */
 /* ------------------------------------------------ page New ----------------------*/
+.new h3 i{
+    color: rgb(148, 221, 37);
+}
+.new th{
+    background-color: #f7f7f7;
+}
 .pagination .page-item{
     padding: 3px;
+}
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ------------------------------- Page Login & page Registration ---------------- */
+.logIn h2 i,.register h2 i{
+    color: rgb(148, 221, 37);
+}
+.logIn .jumbotron,.register .jumbotron{
+    background-color: #f7f7f7;
+    border: 1px solid #dfdfdf;
+}
+.editWidth{
+    max-width: 50% !important;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* ----------------------------------------- page contactUs ----------- */
+.contactUs h3 i{
+    color: rgb(252, 165, 4);
+}
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* ----------------------------------------- page News ------------------------------ */
+.newsContent img{
+    width: 100%;
+    height: 200px;
+    opacity: 0.8;
+}
+.newsContent{
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.newsContent .btn{
+    padding: 2px;
+    font-size: 14px;
+}
+.newsContent img:hover{
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.4,1.4);
+    overflow: hidden;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+}
+.centered a{
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    /* background-color: #dfdfdf; */
+    padding: 4px;
+}
+.cardContent a{
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 17px;
+    text-align: inherit;
+    text-transform: capitalize;
+    color: #0277bd;
+}
+.cardContent span{
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: none;
+    color: #adb5bd;
+}
+.cardContent p{
+    font-weight: 400;
+    line-height: 19px;
+    font-size: 12px;
+    text-align: inherit;
+    text-transform: initial;
+    color: #888888;
+}
+.cardContent .btn{
+    background-color: #b2b2b2 !important;
+    border: 0;
+    font-size: 12px;
+}
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    color: white;
+    padding: 2px;
+    background-color: #0277BD;
+}
+  /* ////////////////////////////////////////////////////////////////////////////////////// */
+  /* --------------------------------- Page addAnnouncement -------------------------- */
+
+.anounce h3 i,.anounce h4 i{
+    color: rgb(148, 221, 37);
+}
+.anounce p{
+    font-size: 17px;
+}
+.anounce h3{
+    font-weight: normal;
+    font-size: 26px;
+}
+.anounce h4{
+    font-weight: normal;
+    font-size: 20px;
+}
+.openAcount{
+    background: #f9a825;
+    color: white;
+    border: 0;
+    height: 45px;
+}
+.openNewAcount{
+    background: #0277bd;
+    color: white;
+    border: 0;
+    padding: 6px;
+    height: 45px;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ----------------------------------------- Page Search ---------------------------------------- */
+.searchContent h6 i{
+    color: rgb(148, 221, 37);
+}
+.searchContent .drp{
+    border:1px solid #0267A4 !important;
+    width: 100px;
+    border-radius: 10px;
+}
+.searchContent .dropdown-menu{
+    background-color: #FFFFFF;
+}
+.searchContent .dropdown-menu .dropdown-item{
+    color: #0267A4;
 }
