@@ -49,19 +49,21 @@
 .search{
     background: url(../images/download.jpg);
     width: 100%;
-    min-height: 100vh;
 }
 
 .btnSerch{
     height: 60px;width: 100px;border-radius: 60px;
 }
 #sel1{
+    width: 10%;
     height: 60px;border-radius: 0px 20px 20px 0px;
 }
 #sel2{
     height: 60px;margin-left: -2px;
+    width: 10%;
 }
 #sel3{
+    width: 60%;
     height: 60px;border-radius: 20px 0px 0px 20px;
 }
 @media screen and (max-width: 770px) {
@@ -77,13 +79,13 @@
     #sel1{
         margin: 4px;
         border-radius: 20px;
-        width: 48%;
+        width: 45%;
         height: 40px;
     }
     #sel2{
         margin: 4px;
         border-radius: 20px;
-        width: 48%;
+        width: 45%;
         height: 40px;
     }
     #sel3{
@@ -300,6 +302,9 @@
     color: #f9a825;
     font-size: 14px;
 }
+.hidenModal{
+    display: none;
+}
 /* ////////////////////////////////////////////////////////////////////////////////// */
 /* ------------------------------------------------ page New ----------------------*/
 .new h3 i{
@@ -443,4 +448,17 @@
 }
 .searchContent .dropdown-menu .dropdown-item{
     color: #0267A4;
+}
+.cardSearch a h6{
+    font-size: 14px;
+    padding: 2px;
+    font-weight: bold;
+    color: #555;
+}
+.cardSearch a{
+    color: #343a40!important;
+    font-size: 14px;
+}
+.cardSearch p{
+    font-size: 12px;
 }
