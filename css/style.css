@@ -435,12 +435,11 @@
 }
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* ----------------------------------------- Page Search ---------------------------------------- */
-.searchContent h6 i{
+.searchContent h6 i,.searchContent h3 i{
     color: rgb(148, 221, 37);
 }
 .searchContent .drp{
     border:1px solid #0267A4 !important;
-    width: 100px;
     border-radius: 10px;
 }
 .searchContent .dropdown-menu{
@@ -448,6 +447,11 @@
 }
 .searchContent .dropdown-menu .dropdown-item{
     color: #0267A4;
+}
+@media screen and (max-width:800px){
+    .drp{
+        display: none;
+    }
 }
 .cardSearch a h6{
     font-size: 14px;
@@ -461,4 +465,17 @@
 }
 .cardSearch p{
     font-size: 12px;
+}
+.cardSearch span{
+    color: rgb(240, 136, 0);
+    font-size: 23px;
+}
+.cardSearch .details{
+    border-radius: 15px;
+    background-color: #0277BD;
+    color: white;
+    font-weight: bold;
+}
+.fmSide{
+    border-radius: 15px;
 }
