@@ -479,3 +479,25 @@
 .fmSide{
     border-radius: 15px;
 }
+.bn{
+    background-color: #dd9e16;
+}
+@media screen and (min-width:1000px){
+    .sidebr{
+        width: 75%;
+        float: right;
+    }
+}
+@media screen and (max-width:1000px){
+    /* .sidebr{
+        display: none;
+    } */
+    .inptgrp .bn{
+        width: 50%;
+    }
+}
+@media screen and (min-width:1000px){
+    .inptgrp .bn{
+        display: none;
+    }
+}
