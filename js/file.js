@@ -9,10 +9,10 @@ $(document).ready(function(){
       $('.divWillHide').hide();
       $('.hidenModal').show();
     });
-    $('.showside').click(function(){
+    $('#showside').click(function(){
       $('.inptgrp').css("display","block");
     });
-    $('.showside').click(function(){
+    $('#showside').click(function(){
       $('.sidebr').css("display","block");
     });
 });

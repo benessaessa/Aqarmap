@@ -30,13 +30,13 @@
                 </span>
             </h6><br>
             <h4 class="text-right" dir="rtl"><i class="fas fa-caret-left"></i> شقق للبيع في القاهرة الجديدة - التجمع الخامس </h4><br>
-            <div class="input-group inptgrp justify-content-center d-flex p-2">
-                <select name="" class="form-control bn"> 
+            <div class="input-group inptgrp justify-content-center sticky-top d-flex  font-weight-bolder">
+                <select name="" class="form-control bn border-0 text-black" dir="rtl"> 
                     <option value=""> رتب النتائج </option>
                     <option value=""> تاريخ النشر </option>
                     <option value=""> السعر </option>
                 </select>
-                <a href="#sideBar" class="btn showside bn">تصفية النتائج</a>
+                <a href="#" data-toggle="modal" data-target="#mySideBar" class="btn bn" id="showside">تصفية النتائج</a>
             </div>
             <div class="row">
                 <div class="col-lg-4">
@@ -243,6 +243,125 @@
                 </div>
             </div>
         </div><br>    
+    </div>
+    <div class="modal" id="mySideBar">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                    <div class="modal-header" dir="ltr">
+                            <h4 class="text-center">خيارات البحث</h4>
+                            <button type="button" class="close float-left" data-dismiss="modal"> إغلاق </button>
+                          </div>
+                <div class="modal-body">
+                <div class="card text-right pr-2"><br>
+                    <h4>عرض النتائج لـ</h4>
+                    <div class="card-body">
+                    <label class="font-weight-bold mr-1" for="phot"> الإعلانات المصورة فقط </label>
+                    <input type="checkbox"  dir="ltr" name="" value="" id="phot"><br>
+                    <label class="font-weight-bold mr-1" for="mm"> عقارات داخل كمبوند فقط </label>
+                    <input type="checkbox"  dir="ltr" name="" value="mm" id="mm"><hr>
+                    <h5>ابحث بواسطة</h5><br>
+                    <h6 data-toggle="collapse" data-target="#salary"> <i class="fa fa-plus-square fa-lg float-left"></i> السعر  </h6>
+                    <div id="salary" class="collapse">
+                        <div class="input-group p-2">
+                            <select name="" class="form-control fmSide"> 
+                                <option value="" selected disabled> أقل سعر </option>
+                                <option value=""> 12000 </option>
+                                <option value=""> 14000 </option>
+                            </select>
+                            <select name="" class="form-control fmSide"> 
+                                <option value="" selected disabled> أكبر سعر </option>
+                                <option value=""> 250000 </option>
+                                <option value=""> 500000 </option>
+                            </select>
+                        </div>
+                    </div><hr>
+                    <h6 data-toggle="collapse" data-target="#area"> <i class="fa fa-plus-square fa-lg float-left"></i> المساحة </h6>
+                    <div id="area" class="collapse">
+                        <div class="input-group p-2">
+                            <select name="" class="form-control fmSide"> 
+                                <option value="" selected disabled> أقل مساحة </option>
+                                <option value=""> 100 متر </option>
+                                <option value=""> 120 متر </option>
+                            </select>
+                            <select name="" class="form-control fmSide"> 
+                                <option value="" selected disabled> أكبر مساحة </option>
+                                <option value=""> 1000 متر </option>
+                                <option value=""> 1500 متر </option>
+                            </select>
+                        </div>
+                    </div><hr>
+                    <h6 data-toggle="collapse" data-target="#paid"> <i class="fa fa-plus-square fa-lg float-left"></i> طريقة الدفع </h6>
+                    <div id="paid" class="collapse">
+                        <div class="text-right" dir="rtl">
+                            <input type="radio" name="mm" value="mm"> الكل <br>
+                            <input type="radio" name="mm" value="mm"> نقدا <br>
+                            <input type="radio" name="mm" value="mm"> تقسيط <br>
+                        </div>
+                    </div><hr>
+                    <h6 data-toggle="collapse" data-target="#show"> <i class="fa fa-plus-square fa-lg float-left"></i> الإطلالة </h6>
+                    <div id="show" class="collapse">
+                        <div class="text-right">
+                            <label class="font-weight-bold mr-1" for="all"> الكل </label>
+                            <input type="checkbox"  dir="ltr" name="" value="" id="all"><br>
+                            <label class="font-weight-bold mr-1" for="str"> شارع فرعي </label>
+                            <input type="checkbox"  dir="ltr" name="" value="str" ><br>
+                            <label class="font-weight-bold mr-1" for="main"> شارع رئيسي </label>
+                            <input type="checkbox"  dir="ltr" name="" value="" id="main"><br>
+                            <label class="font-weight-bold mr-1" for="party"> حديقة </label>
+                            <input type="checkbox"  dir="ltr" name="" value="party" ><br>
+                        </div>
+                    </div><hr>
+                    <h6 data-toggle="collapse" data-target="#tashteeb"> <i class="fa fa-plus-square fa-lg float-left"></i> نوع التشطيب </h6>
+                    <div id="tashteeb" class="collapse">
+                        <div class="text-right">
+                            <label class="font-weight-bold mr-1" for="all2"> الكل </label>
+                            <input type="checkbox"  dir="ltr" name="" value="" id="all2"><br>
+                            <label class="font-weight-bold mr-1" for="exsuplx"> اكسترا سوبر لوكس </label>
+                            <input type="checkbox"  dir="ltr" name="" id="exsuplx" ><br>
+                            <label class="font-weight-bold mr-1" for="sublx"> سوبر لوكس </label>
+                            <input type="checkbox"  dir="ltr" name="" value="" id="sublx"><br>
+                            <label class="font-weight-bold mr-1" for="lox"> لوكس </label>
+                            <input type="checkbox"  dir="ltr" name="" id="lox"><br>
+                        </div>
+                    </div><hr>
+                    <h6 data-toggle="collapse" data-target="#rooms"> <i class="fa fa-plus-square fa-lg float-left"></i> عدد الغرف </h6>
+                    <div id="rooms" class="collapse">
+                        <div class="text-right">
+                            <label class="font-weight-bold mr-1" for="one"> 1 </label>
+                            <input type="checkbox"  dir="ltr" name="" value="" id="one"><br>
+                            <label class="font-weight-bold mr-1" for="two"> 2 </label>
+                            <input type="checkbox"  dir="ltr" name="" id="two" ><br>
+                            <label class="font-weight-bold mr-1" for="three"> 3 </label>
+                            <input type="checkbox"  dir="ltr" name="" value="" id="three"><br>
+                            <label class="font-weight-bold mr-1" for="four"> 4 </label>
+                            <input type="checkbox"  dir="ltr" name="" id="four"><br>
+                        </div>
+                    </div><hr>
+                    <h6 data-toggle="collapse" data-target="#floor"> <i class="fa fa-plus-square fa-lg float-left"></i> الدور </h6>
+                    <div id="floor" class="collapse">
+                        <div class="text-right">
+                            <label class="font-weight-bold mr-1" for="one1"> 1 </label>
+                            <input type="checkbox"  dir="ltr" name="" value="" id="one1"><br>
+                            <label class="font-weight-bold mr-1" for="two1"> 2 </label>
+                            <input type="checkbox"  dir="ltr" name="" id="two1" ><br>
+                            <label class="font-weight-bold mr-1" for="three1"> 3 </label>
+                            <input type="checkbox"  dir="ltr" name="" value="" id="three1"><br>
+                            <label class="font-weight-bold mr-1" for="four1"> 4 </label>
+                            <input type="checkbox"  dir="ltr" name="" id="four1"><br>
+                        </div>
+                    </div><hr>
+                    <h6 data-toggle="collapse" data-target="#srh"> <i class="fa fa-plus-square fa-lg float-left"></i> بحث بالكلمة </h6>
+                    <br>
+                    <div id="srh" class="collapse">
+                        <input type="text" class="form-control" dir="rtl" placeholder="جراج , حمام سباحة"><br>
+                    </div>
+                    <button class="btn btn-primary"> بحث </button>
+                    <button class="btn btn-white text-dark border">إعادة ضبط</button><hr>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>

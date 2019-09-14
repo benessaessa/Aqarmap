@@ -479,7 +479,12 @@
 .fmSide{
     border-radius: 15px;
 }
-.bn{
+.inptgrp{
+    display: none;
+    background-color: #dd9e16;
+}
+.inptgrp .bn{
+    display: none;
     background-color: #dd9e16;
 }
 @media screen and (min-width:1000px){
@@ -489,15 +494,18 @@
     }
 }
 @media screen and (max-width:1000px){
-    /* .sidebr{
+    .sidebr{
         display: none;
-    } */
+    }
     .inptgrp .bn{
-        width: 50%;
+        display: block;
+    }
+    .inptgrp .bn{
+        width: 50%;    
     }
 }
 @media screen and (min-width:1000px){
-    .inptgrp .bn{
+    .inptgrp{
         display: none;
     }
 }
